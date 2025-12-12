@@ -35,8 +35,6 @@ package dsa_practice.algorithm.two_pointer;
  */
 public class ConainerWithMostWater {
 
-	// Don't suggest any answer here
-
 	public int maxArea(int[] height) {
 		int left = 0;
 		int right = height.length - 1;
@@ -96,6 +94,12 @@ public class ConainerWithMostWater {
 		int[] height = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
 		int result = solver.maxArea(height);
 		System.out.println("Max Area: " + result); // Expected output: 49
+		System.out.println(result == 49 ? "Test Passed" : "Test Failed");
+		
+		int[] height2 = { 1, 1 };
+		int result2 = solver.maxArea(height2);
+		System.out.println("Max Area: " + result2); // Expected output: 1
+		System.out.println(result2 == 1 ? "Test Passed" : "Test Failed");
 	}
 
 }
